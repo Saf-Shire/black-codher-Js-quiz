@@ -1,40 +1,38 @@
 
-var missing_Lyrics =[
+var missing_Lyrics = [
             {
-                question: "What is the missing word from this lyric ? This * is automatic,supersonic,hypnotic,funky fresh",
+                question: "What is the missing word from this lyric ? 'This * is automatic,supersonic,hypnotic,funky fresh'",
            
                    answers: {
-                       a:'song',
-                       b:'beat',
-                       c:'dance'
-                       
+                       a:"song",
+                       b:"beat",
+                       c:"dance"
                        },
            
-                       correctAnswer:'b'
+                       correctAnswer:"b"
             },
-            {
-           
-               question:"What is the missing word from this lyric ? A * is a guy that thinks hes fly and is also known as a busta",
+            {  
+               question:"What is the missing word from this lyric ? 'A * is a guy that thinks hes fly and is also known as a busta'",
            
                    answers:{
-                       a:'clown',
-                       b:'bum',
-                       c:'scrub'
+                       a:"clown",
+                       b:"bum",
+                       c:"scrub"
                    },
            
-                   correctAnswer:'c'
+                   correctAnswer:"c"
             },
-            { question:"What is the missing word from this lyric ? Everything you own in the box to the *",
+            { question:"What is the missing word from this lyric ? 'Everything you own in the box to the *'",
                
                    answers:{
-                       a:'left',
-                       b:'right',
-                       c:'bin'
+                       a:"left",
+                       b:"right",
+                       c:"bin"
                    },
-                   correctAnswer:'a'
+                   correctAnswer:"a"
             }
            ];
-           var quizContainer = document.getElementById('songquiz');
+           var quizContainer = document.getElementById('quiz');
            var resultsContainer = document.getElementById('answer-choice');
            var submitButton = document.getElementById('submit');
    
@@ -56,7 +54,7 @@ var missing_Lyrics =[
 
                 answers.push(
                     '<label>'
-                        + '<input type= "radio" name="question'+i+' " value="'+letter+'">'
+                        + '<input type= "radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
                     + '</label>'
